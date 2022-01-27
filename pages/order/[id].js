@@ -120,6 +120,8 @@ import useStyles from '../../utilis/styles';
         };
         loadPaypalScript();
       }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     }, [order, successPay, successDeliver]);
     
     const { enqueueSnackbar } = useSnackbar();

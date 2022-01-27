@@ -1,18 +1,18 @@
 import {
-    Button,
-    Card,
-    CircularProgress,
-    Grid,
-    List,
-    ListItem,
-    ListItemText,
-    Table,
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableHead,
-    TableRow,
-    Typography
+  Button,
+  Card,
+  CircularProgress,
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography
 } from "@material-ui/core";
 import axios from "axios";
 import { CategoryScale } from "chart.js";
@@ -86,6 +86,8 @@ function AdminUsers() {
     } else {
       fetchData();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, [successDelete]);
 
   const deleteHandler = async (userId) => {

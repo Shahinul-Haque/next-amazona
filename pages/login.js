@@ -40,6 +40,8 @@ export default function Login() {
     if (userInfo) {
       router.push("/");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const submitHanlder = async ({ email, password }) => {

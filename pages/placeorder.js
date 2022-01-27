@@ -1,7 +1,7 @@
 import {
-    Button,
-    Card, CircularProgress, Grid, Link, List,
-    ListItem, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography
+  Button,
+  Card, CircularProgress, Grid, Link, List,
+  ListItem, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography
 } from "@material-ui/core";
 import axios from "axios";
 import Cookies from "js-cookie";
@@ -40,6 +40,8 @@ function PlaceOrder() {
     if (cartItems.length === 0) {
       router.push("/cart");
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
   
   const { closeSnackbar, enqueueSnackbar } = useSnackbar();

@@ -41,7 +41,8 @@ export default function Shipping() {
     setValue("postalCode", shippingAddress.postalCode);
     setValue("country", shippingAddress.country);
 
-    //console.log("HERE IS THE SHIPPING ADDRESSES->>", shippingAddress.address);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
   }, []);
 
   const submitHanlder = async ({
